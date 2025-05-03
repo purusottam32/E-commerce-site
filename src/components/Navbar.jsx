@@ -8,7 +8,7 @@ import { CiMenuKebab } from "react-icons/ci";
 function Navbar() {
   return (
     <>
-      <div className="bg-gray-50  ">
+      <div className="bg-gray-50  shadow-sm">
         <div className="container h-[67px] w-full flex items-center justify-between mx-auto">
           <div>
             <img src="/flipkartLogo.svg" alt="logo" />
