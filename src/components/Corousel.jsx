@@ -11,7 +11,7 @@ function Corousel() {
   ];
 
   return (
-    <div className="shadow-sm mt-4">
+    <div className="container mx-auto shadow-sm mt-4">
       <Carousel
         showThumbs={false}
         showStatus={false}

@@ -12,8 +12,8 @@ function CategorySection() {
 {src:"/travel.webp",name:"Travel"},
 {src:"/grocery.webp",name:"Grocery"}]
   return (
-    <div className=" bg-white shadow-sm mt-2">
-      <div className="container flex mx-auto justify-between items-center">
+    <div className=" mt-2">
+      <div className="container bg-white flex mx-auto justify-between items-center">
        {
         category.map((item,index)=>(
           <div className="h-[130px] w-[126px] flex flex-col items-center justify-center">
