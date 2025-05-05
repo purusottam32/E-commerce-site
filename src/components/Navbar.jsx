@@ -7,50 +7,43 @@ import { CiMenuKebab } from "react-icons/ci";
 
 function Navbar() {
   return (
-    <>
-      <div className="bg-gray-50  shadow-sm">
-        <div className="container h-[67px] w-full flex items-center justify-between mx-auto">
-          <div>
-            <img src="/flipkartLogo.svg" alt="logo" />
-          </div>
-          <div className="flex items-center bg-[#F0F5FF]">
-            <CiSearch size="24px" />
-            <input
-              type="text"
-              placeholder="Search for Products, Brands and More"
-              className="h-[40px] w-[527.25px]"
-            />
-          </div>
+    <div className="bg-gray-50 shadow-sm">
+      <div className="container mx-auto flex flex-wrap items-center justify-between px-2 py-3">
+        {/* Logo */}
+        <img src="/flipkartLogo.svg" alt="logo" className="h-6 md:h-8" />
 
-          
-            <div>
-              <button className="flex gap-1">
-                <CgProfile size="24px" />
-                Login
-              </button>
-            </div>
-            <div >
-              <button className="flex gap-1">
-                <LuShoppingCart size="24px" />
-                Cart
-              </button>
-            </div>
-            <div>
-              <button className="flex gap-1">
-                <CiShop size="24px" />
-                Become a Seller
-              </button>
-            </div>
-            <div>
-              <button>
-                <CiMenuKebab size="24px" />
-              </button>
-            </div>
-          </div>
-        
+        {/* Search Box */}
+        <div className="flex items-center bg-[#F0F5FF] w-full md:w-auto mt-2 md:mt-0">
+          <CiSearch size="24px" className="ml-2" />
+          <input
+            type="text"
+            placeholder="Search for Products, Brands and More"
+            className="h-10 w-full md:w-[400px] px-2 text-sm outline-none bg-[#F0F5FF]"
+          />
+        </div>
+
+        {/* Menu Buttons */}
+        <div className="flex items-center gap-4 text-sm mt-2 md:mt-0">
+          <button className="flex gap-1 items-center">
+            <CgProfile size="20px" />
+            <span className="hidden sm:inline">Login</span>
+          </button>
+          <button className="flex gap-1 items-center">
+            <LuShoppingCart size="20px" />
+            <span className="hidden sm:inline">Cart</span>
+          </button>
+          <button className="flex gap-1 items-center hidden md:flex">
+            <CiShop size="20px" />
+            <span>Become a Seller</span>
+          </button>
+          <button className="md:hidden">
+            <CiMenuKebab size="20px" />
+          </button>
+        </div>
       </div>
-    </>
+    </div>
   );
 }
+
 
 export default Navbar;

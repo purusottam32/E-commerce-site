@@ -23,7 +23,7 @@ function Corousel() {
       >
         {banners.map((item, index) => (
           <div key={index}>
-            <img src={item.src} alt={item.alt} className="object-cover" />
+            <img src={item.src} alt={item.alt} className="w-full object-cover max-h[200px] md:max-h-[350px]" />
           </div>
         ))}
       </Carousel>
