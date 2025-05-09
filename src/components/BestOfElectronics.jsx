@@ -2,32 +2,32 @@ import ProductCard from './ProductCard';
 
 const products = [
   {
-    image: '/public/projector.webp',
+    image: '/projector.webp',
     title: 'Projector',
     subtitle: 'From ₹6990',
   },
   {
-    image: '/public/samrtWatches.webp',
+    image: '/samrtWatches.webp',
     title: 'Fastrack Smartwatch',
     subtitle: 'From ₹1,399',
   },
   {
-    image: '/public/TV.webp',
+    image: '/TV.webp',
     title: 'Smart TV',
     subtitle: 'From ₹40999',
   },
   {
-    image: '/public/TWS.webp',
+    image: '/TWS.webp',
     title: 'Best Truewireless H...',
     subtitle: 'Grab Now',
   },
   {
-    image: '/public/monitors.webp',
+    image: '/monitors.webp',
     title: 'Monitors',
     subtitle: 'From ₹8000',
   },
   {
-    image: '/public/speakersd.webp',
+    image: '/speakersd.webp',
     title: 'Best Speakers',
     subtitle: 'From ₹1,099',
   },
@@ -36,7 +36,7 @@ const products = [
 const BestOfElectronics = () => {
     return (
       <section className="bg-gray-100 p-4">
-        <div className="bg-white p-4 rounded-md shadow-md flex flex-col lg:flex-row mx-auto">
+        <div className="container bg-white p-4 rounded-md shadow-md flex flex-col lg:flex-row mx-auto">
           {/* Left: Title + Product Scroll */}
           <div className="flex-1">
             <h2 className="text-lg font-semibold mb-4">Best of Electronics</h2>
