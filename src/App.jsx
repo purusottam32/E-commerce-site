@@ -4,12 +4,14 @@ import CategorySection from './components/CategorySection'
 import Corousel from './components/Corousel'
 import BestOfElectronics from './components/BestOfElectronics'
 
+ 
 
 function App() { 
    
   return (
     <>
       <Navbar/>
+    
       <CategorySection/>
       <Corousel/>
       <BestOfElectronics/>

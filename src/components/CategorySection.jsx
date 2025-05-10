@@ -3,8 +3,8 @@ import React from "react";
 function CategorySection() {
   const category = [
     { src: "/top-offer.webp", name: "Top offers" },
-    { src: "/mobiles.webp", name: "Mobiles & Tablets" },
-    { src: "/appliances.webp", name: "TVs & Appliances" },
+    { src: "/mobiles.webp", name: "Mobiles" },
+    { src: "/appliances.webp", name: "Appliances" },
     { src: "/electronics.png", name: "Electronics" },
     { src: "/fashion.webp", name: "Fashion" },
     { src: "/beauty.webp", name: "Beauty,Foods.." },
@@ -26,13 +26,13 @@ function CategorySection() {
                 className="w-10 h-10 object-contain"
                 alt={item.name}
               />
-              <span className="mt-1 text-center">{item.name}</span>
+              <span className="mt-1 text-xs font-semibold text-center">{item.name}</span>
             </div>
           ))}
         </div>
         
         {/* Desktop */}
-        <div className="hidden md:flex  overflow-x-auto md:justify-between gap-4 scrollbar-hide">
+        <div className="hidden md:flex overflow-x-auto md:justify-between gap-4 scrollbar-hide">
           {category.map((item, index) => (
             <div
               key={index}
@@ -40,14 +40,14 @@ function CategorySection() {
             >
               <a
                 href="#"
-                className="flex flex-col overflow-x-auto items-center"
+                className="flex flex-col overflow-x-auto items-center my-2"
               >
                 <img
                   src={item.src}
                   alt={item.name}
                   className="h-[60px] object-contain"
                 />
-                <span className="text-xs md:text-sm font-semibold text-center mt-2">
+                <span className="text-xs md:text-sm font-semibold text-center">
                   {item.name}
                 </span>
               </a>
