@@ -39,8 +39,8 @@ const BestOfElectronics = () => {
         <div className="container bg-white p-4 rounded-md shadow-md flex flex-col lg:flex-row mx-auto">
           {/* Left: Title + Product Scroll */}
           <div className="flex-1">
-            <h2 className="text-lg font-semibold mb-4">Best of Electronics</h2>
-            <div className="flex overflow-x-auto space-x-4">
+            <h2 className="text-lg font-semibold mb-5">Best of Electronics</h2>
+            <div className="flex overflow-x-auto space-x-10">
               {products.map((product, idx) => (
                 <ProductCard key={idx} product={product} />
               ))}
@@ -48,13 +48,13 @@ const BestOfElectronics = () => {
           </div>
   
           {/* Right: Ad Banner */}
-          <div className="mt-4 lg:mt-0 lg:ml-4 w-full lg:w-48 flex-shrink-0">
-            <img
-              src="/flightBooking.webp"
-              alt="Flight Booking Banner"
-              className="w-full h-full object-cover rounded"
-            />
-          </div>
+            <div className="mt-4 lg:mt-0 lg:ml-4 w-full lg:w-56 h-62 flex-shrink-0">
+          <img
+            src="/flightBooking.webp"
+            alt="Flight Booking Banner"
+            className="w-full h-full object-cover rounded"
+          />
+        </div>
         </div>
       </section>
     );

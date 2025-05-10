@@ -17,13 +17,31 @@ function CategorySection() {
   return (
     <div className="mt-2">
       <div className="container bg-white mx-auto px-2">
-        <div className="flex overflow-x-auto md:justify-between gap-4 scrollbar-hide">
+        {/* mobile view */}
+        <div className="grid grid-cols-5 gap-2 px-3 md:hidden">
+          {category.map((item, index) => (
+            <div key={index} className="flex flex-col items-center text-xs">
+              <img
+                src={item.src}
+                className="w-10 h-10 object-contain"
+                alt={item.name}
+              />
+              <span className="mt-1 text-center">{item.name}</span>
+            </div>
+          ))}
+        </div>
+        
+        {/* Desktop */}
+        <div className="hidden md:flex  overflow-x-auto md:justify-between gap-4 scrollbar-hide">
           {category.map((item, index) => (
             <div
               key={index}
               className="min-w-[90px] md:w-[120px] flex flex-col items-center justify-center"
             >
-              <a href="#" className="flex flex-col items-center">
+              <a
+                href="#"
+                className="flex flex-col overflow-x-auto items-center"
+              >
                 <img
                   src={item.src}
                   alt={item.name}
