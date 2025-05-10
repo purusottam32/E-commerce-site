@@ -26,7 +26,7 @@ function CategorySection() {
                 className="w-10 h-10 object-contain"
                 alt={item.name}
               />
-              <span className="mt-1 text-xs font-semibold text-center">{item.name}</span>
+              <span className="mt-1 text-xs font-semibold text-center truncate">{item.name}</span>
             </div>
           ))}
         </div>

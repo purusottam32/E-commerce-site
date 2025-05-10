@@ -11,7 +11,6 @@ function App() {
   return (
     <>
       <Navbar/>
-    
       <CategorySection/>
       <Corousel/>
       <BestOfElectronics/>
