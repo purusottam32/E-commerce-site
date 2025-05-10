@@ -29,8 +29,8 @@ function Corousel() {
               src={isMobile ? item.mob : item.src}
               alt={item.alt}
               className={`w-full object-cover ${
-                isMobile ? "h-[180px]" : "max-h-[350px]"
-              } rounded-2xl`}
+                isMobile ? "h-[180px] rounded-2xl" : "max-h-[350px]"
+              }`}
             />
           </div>
         ))}
