@@ -39,7 +39,7 @@ const BestOfElectronics = () => {
       <div className="container bg-white p-4 shadow-sm mx-auto">
         <div className="flex flex-col lg:flex-row">
           {/* Left: Title + Product Scroll */}
-          <div className="flex-1">
+          <div className="flex-1 overflow-x-auto">
             <h2 className="text-lg font-semibold mb-5">Best of Electronics</h2>
             <div className="flex overflow-x-auto space-x-5 hide-scrollbar">
               {products.map((product, idx) => (
@@ -49,11 +49,11 @@ const BestOfElectronics = () => {
           </div>
 
           {/* Right: Ad Banner (hidden on small screens) */}
-          <div className="hidden lg:block lg:ml-4 w-full lg:w-56 flex-shrink-0">
+          <div className="hidden lg:block w-full lg:w-40 flex-shrink-0">
             <img
               src="/flightBooking.webp"
               alt="Flight Booking Banner"
-              className="w-full h-full object-cover rounded-md"
+              className="w-full h-full object-cover"
             />
           </div>
         </div>
