@@ -3,7 +3,7 @@ import Navbar from './components/Navbar'
 import CategorySection from './components/CategorySection'
 import Corousel from './components/Corousel'
 import BestOfElectronics from './components/BestOfElectronics'
-
+import Footer from './components/Footer'
  
 
 function App() { 
@@ -14,6 +14,7 @@ function App() {
       <CategorySection/>
       <Corousel/>
       <BestOfElectronics/>
+      <Footer/>
     </>
   )
 }

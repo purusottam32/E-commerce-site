@@ -5,6 +5,8 @@ import { LuShoppingCart } from "react-icons/lu";
 import { MdOutlineMenu } from "react-icons/md";
 import { CiMenuKebab } from "react-icons/ci";
 import { CiShop } from "react-icons/ci";
+import { NavLink } from "react-router-dom";
+import Login from "./Login";
 
 function Navbar() {
   return (
@@ -13,7 +15,7 @@ function Navbar() {
       <div className="flex items-center justify-between px-4 py-2 md:hidden">
         {/* Left: Menu + Logo */}
         <div className="flex items-center ">
-        <MdOutlineMenu size="24px"/>
+          <MdOutlineMenu size="24px" />
           <img src="/flipkartLogo.svg" alt="logo" className="h-5" />
         </div>
 
@@ -54,8 +56,17 @@ function Navbar() {
         {/* Menu Items */}
         <div className="flex items-center gap-4 text-sm">
           <button className="flex gap-1 items-center">
-            <CgProfile size="20px" />
-            <span>Login</span>
+            <NavLink
+              to="/Login"
+              className={({ isActive }) =>
+                `flex gap-1 items-center px-2 py-2 rounded ${
+                  isActive ? "bg-blue-600 text-md text-white" : "text-black"
+                }`
+              }
+            >
+              <CgProfile size="20px" />
+              <span>Login</span>
+            </NavLink>
           </button>
           <button className="flex gap-1 items-center">
             <LuShoppingCart size="20px" />
